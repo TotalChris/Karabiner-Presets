@@ -1,0 +1,93 @@
+{
+	"description": "Arc Quick Tab (Command for Search, Hold Command to Dictate)",
+	"manipulators": [
+		{
+			"conditions": [
+				{
+					"bundle_identifiers": [
+						"company.thebrowser.Browser"
+					],
+					"type": "frontmost_application_if"
+				}
+			],
+			"from": {
+				"key_code": "left_command"
+			},
+			"parameters": {
+				"basic.to_if_alone_timeout_milliseconds": 100,
+				"basic.to_if_held_down_threshold_milliseconds": 100
+			},
+			"to_after_key_up": {
+				"consumer_key_code": "dictation"
+			},
+			"to_delayed_action": {
+				"to_if_invoked": {
+					"consumer_key_code": "dictation"
+				}
+			},
+			"to_if_alone": [
+				{
+					"halt": true,
+					"key_code": "t",
+					"modifiers": [
+						"left_command"
+					]
+				}
+			],
+			"to_if_held_down": [
+				{
+					"halt": false,
+					"key_code": "t",
+					"modifiers": [
+						"left_command"
+					]
+				}
+			],
+			"type": "basic"
+		},
+		{
+			"conditions": [
+				{
+					"bundle_identifiers": [
+						"company.thebrowser.Browser"
+					],
+					"type": "frontmost_application_if"
+				}
+			],
+			"from": {
+				"key_code": "right_command"
+			},
+			"parameters": {
+				"basic.to_if_alone_timeout_milliseconds": 100,
+				"basic.to_if_held_down_threshold_milliseconds": 100
+			},
+			"to_after_key_up": {
+				"consumer_key_code": "dictation"
+			},
+			"to_delayed_action": {
+				"to_if_invoked": {
+					"consumer_key_code": "dictation"
+				}
+			},
+			"to_if_alone": [
+				{
+					"halt": true,
+					"key_code": "t",
+					"modifiers": [
+						"right_command"
+					]
+				}
+			],
+			"to_if_held_down": [
+				{
+					"halt": false,
+					"key_code": "t",
+					"modifiers": [
+						"right_command"
+					]
+				}
+			],
+			"type": "basic"
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"description": "MacOS Quick Spotlight (Command to Search, Hold Command for Siri)",
+	"manipulators": [
+		{
+			"from": {
+				"key_code": "left_command"
+			},
+			"parameters": {
+				"basic.to_if_alone_timeout_milliseconds": 150,
+				"basic.to_if_held_down_threshold_milliseconds": 150
+			},
+			"to_after_key_up": {
+				"consumer_key_code": "dictation"
+			},
+			"to_if_alone": [
+				{
+					"apple_vendor_keyboard_key_code": "spotlight",
+					"halt": true
+				}
+			],
+			"to_if_held_down": {
+				"consumer_key_code": "dictation"
+			},
+			"type": "basic"
+		},
+		{
+			"from": {
+				"key_code": "right_command"
+			},
+			"parameters": {
+				"basic.to_if_alone_timeout_milliseconds": 150,
+				"basic.to_if_held_down_threshold_milliseconds": 150
+			},
+			"to_after_key_up": {
+				"consumer_key_code": "dictation"
+			},
+			"to_if_alone": [
+				{
+					"apple_vendor_keyboard_key_code": "spotlight",
+					"halt": true
+				}
+			],
+			"to_if_held_down": {
+				"consumer_key_code": "dictation"
+			},
+			"type": "basic"
+		}
+	]
+}
