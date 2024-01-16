@@ -12,17 +12,17 @@ After installing Karabiner-Elements to your MacOS system:
 
 # The Presets
 
-### Control to Command
+### Control to Command > *ctrl-to-cmd.json*
 This file maps any press of the Control key to the Command key, as most shortcuts in MacOS primarily use Command. This allows the rest of the Command actions in this repo to work.
 
 This excludes MacOS's Terminal because most shortcuts in Terminal use Control by default.
 
-### Quick Spotlight / Hold for Siri
+### Quick Spotlight / Hold for Siri > *macos-quick-spotlight.json* 
 This file maps a tap on the Command key to open Spotlight Search. This follows the original goal I had.
 It also listens for a short hold on the Command key, and triggers Siri if so. When a hold is released, Siri is either cancelled or executes what you said.
 > This works best if you enable *Always Show Siri Captions* in the **Siri Responses** settings of your Mac.
 
-### Quick Arc Tab / Hold to Dictate
+### Quick Arc Tab / Hold to Dictate > *quick-arc-tab.json*
 This file maps a tap on the Command key to a New Tab action, but exclusively in Arc (My browser of choice).
 > The browser can be modified by editing the `conditions.bundle_identifiers` property to detect a different browser's package name.
 
