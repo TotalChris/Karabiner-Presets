@@ -1,5 +1,5 @@
 # Karabiner-Elements Presets
-As a long-time Windows user, entering MacOS was really jarring. I was used to smacking the Win key and typing out whatever I wanted to search and getting quick web results. That's why I started mapping my command key to Spotlight search. These files are advanced configurations I've made since then to improve my experience, each focusing on the power of the Command key.
+As a long-time Windows user, entering MacOS was really jarring. I was used to smacking the Win key and typing out whatever I wanted to search and getting quick web results. That's why I started mapping my command key to Spotlight search. These files are advanced configurations I've made since then to improve my experience, mostly focusing on the power of the Command key.
 
 # Installation
 > Before choosing your presets, install "Control to Command" first.
@@ -16,6 +16,16 @@ After installing Karabiner-Elements to your MacOS system:
 This file maps any press of the Control key to the Command key, as most shortcuts in MacOS primarily use Command. This allows the rest of the Command actions in this repo to work.
 
 This excludes MacOS's Terminal because most shortcuts in Terminal use Control by default.
+
+### VSCode Terminal Ctrl + C > *vscode-terminal-kill.json*
+This file maps the Command + C key to the Control + C key combination ONLY IN VSCODE, which is used by some terminal processes as a stop signal. 
+> In order for this to not wipe out copy commands, I went through VSCode's keyboard shortchuts and **added** Ctrl + C to each command that was using Cmd + C.
+
+### Pause to Lock Screen > *pause-locks-screen.json*
+This file maps the Pause key to the Command + Control + Q key combination, which locks the screen. This is a replacement for my brain-trained Win + L to lock command.
+
+### Print Screen to Screenshot > *print-screen-capture.json*
+This file maps the Print Screen key to the Command + Shift + 5 key combination, which opens the screenshot app, similar to how Windows will launch Snipping Tool.
 
 ### Quick Spotlight / Hold for Siri > *macos-quick-spotlight.json* 
 This file maps a tap on the Command key to open Spotlight Search. This follows the original goal I had.

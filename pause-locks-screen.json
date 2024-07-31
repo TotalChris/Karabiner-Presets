@@ -1,0 +1,17 @@
+{
+  "description": "Lock Screen With Pause",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "pause"
+      },
+      "to": [
+        {
+          "key_code": "q",
+          "modifiers": ["left_command", "left_control"]
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
