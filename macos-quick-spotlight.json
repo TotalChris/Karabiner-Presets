@@ -1,45 +1,19 @@
 {
-	"description": "Tap Command for Spotlight, Hold to use Control shortcuts",
-	"manipulators": [
-		{
-			"from": {
-				"key_code": "left_command"
-			},
-			"parameters": {
-				"basic.to_if_alone_timeout_milliseconds": 150
-			},
-			"to": [
-				{
-					"key_code": "left_control"
-				}
-			],
-			"to_if_alone": [
-				{
-					"apple_vendor_keyboard_key_code": "spotlight",
-					"halt": true
-				}
-			],
-			"type": "basic"
-		},
-		{
-			"from": {
-				"key_code": "right_command"
-			},
-			"parameters": {
-				"basic.to_if_alone_timeout_milliseconds": 150
-			},
-			"to": [
-				{
-					"key_code": "right_control"
-				}
-			],
-			"to_if_alone": [
-				{
-					"apple_vendor_keyboard_key_code": "spotlight",
-					"halt": true
-				}
-			],
-			"type": "basic"
-		}
-	]
+    "description": "Tap Command for Raycast, Hold to use Control shortcuts",
+    "manipulators": [
+        {
+            "from": { "key_code": "left_command" },
+            "parameters": { "basic.to_if_alone_timeout_milliseconds": 150 },
+            "to": [{ "key_code": "left_control" }],
+            "to_if_alone": [{ "key_code": "f20" }],
+            "type": "basic"
+        },
+        {
+            "from": { "key_code": "right_command" },
+            "parameters": { "basic.to_if_alone_timeout_milliseconds": 150 },
+            "to": [{ "key_code": "right_control" }],
+            "to_if_alone": [{ "key_code": "f20" }],
+            "type": "basic"
+        }
+    ]
 }
